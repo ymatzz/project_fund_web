@@ -1,0 +1,17 @@
+        body{
+            background-color: #db95f4;
+        }
+        #titulo{
+            text-align: center;
+            border-top: 5px solid;
+            border-bottom: 5px solid;
+        }
+        
+        form{
+            text-align: center;
+            border:3px ridge #000;
+            color: aliceblue;
+        }
+
+
+
