@@ -11,6 +11,8 @@
     display: flex;
     justify-content: center;
     color: #C0BBFC;
+    width: 100%;
+    height: 20vh;
 }
 
 h1{
@@ -18,14 +20,79 @@ h1{
 }
 
 #navSuperior{
-    display: flex;
-    gap: 2vh;
-    margin-left: 3vh;
+    width: 950px;
+    margin: auto;
 }
 
-.blocosCima{
+.listaMenu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2vh;
+}
+
+.itensLista{
+    position:relative;
+    display: inline;
+    list-style-type: square;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30vh;
+    height: auto;
+    text-align: center;
+}
+
+.itensSubLista{
+    position:relative;
+    display: inline;
+    list-style-type: square;
+    border-radius: 5px;
+    width: 30vh;
+    height: auto;
+    text-align: center;
+}
+
+.linksLista{
+    display: block;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 2.5vh;
+    color: green;
+}
+
+.linksLista:hover{
     background-color: #C0BBFC;
-    width: 23%;
-    height: 10vh;
-    border-radius: 1vh;
+    color: white;
+}
+
+.listaSubMenu{
+    position:absolute;
+    top:25px; /*a partir da opção do nivel acima distancia 25px para baixo*/
+    left:0; /* a partir da opção do nivel acima 0px a esquerda*/
+    padding:0;
+    display:none; /*esta é a sacada para esconder o submenu*/
+}
+
+.itensLista:hover ul{
+    display: block;
+}
+
+.itensLista ul li{
+    border: 1px solid black;
+    display: block;
+    width: 30vh; 
+}
+
+.blocos{
+    width: 950px;
+    margin: auto;
+}
+
+#blocoEsquerdo{
+    margin: 2vh auto;
+    float: left;
+    width: 60%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
 }
