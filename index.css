@@ -5,18 +5,16 @@
     border: 1px solid black;
 }
 
-/* cor = #C0BBFC */
+/* cor lilas = #C0BBFC */
 
 #header{
     display: flex;
     justify-content: center;
-    color: #C0BBFC;
-    width: 100%;
-    height: 20vh;
-}
-
-h1{
-    margin-top: 2vh;
+    align-items: center;
+    background-color: #C0BBFC;
+    width: 950px;
+    height: 15vh;
+    margin: auto auto 2vh auto;
 }
 
 #navSuperior{
@@ -42,16 +40,6 @@ h1{
     text-align: center;
 }
 
-.itensSubLista{
-    position:relative;
-    display: inline;
-    list-style-type: square;
-    border-radius: 5px;
-    width: 30vh;
-    height: auto;
-    text-align: center;
-}
-
 .linksLista{
     display: block;
     text-decoration: none;
@@ -63,14 +51,6 @@ h1{
 .linksLista:hover{
     background-color: #C0BBFC;
     color: white;
-}
-
-.listaSubMenu{
-    position:absolute;
-    top:25px; /*a partir da opção do nivel acima distancia 25px para baixo*/
-    left:0; /* a partir da opção do nivel acima 0px a esquerda*/
-    padding:0;
-    display:none; /*esta é a sacada para esconder o submenu*/
 }
 
 .itensLista:hover ul{
@@ -85,14 +65,41 @@ h1{
 
 .blocos{
     width: 950px;
-    margin: auto;
+    height: 40%;
+    margin: 2vh auto;
 }
 
 #blocoEsquerdo{
-    margin: 2vh auto;
     float: left;
-    width: 60%;
+    width: 74%;
     height: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
+    background-color: blue;
+}
+
+#blocoDireito{
+    float: right;
+    width: 24%;
+    height: 100%;
+    background-color: red;
+}
+
+.divCuriosidades{
+    width: 950px;
+    height: 20%;
+    margin: 2vh auto;
+    display: flex;
+    gap: 5%;
+}
+
+.blocoCuriosidades{
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+}
+
+.footer{
+    background-color: red;
+    width: 950px;
+    height: 7%;
+    margin: 0px auto;
 }
