@@ -1,6 +1,6 @@
         body {
             background: linear-gradient(white, #db95f4, #db95f4, white);
-            border: 5px solid white;
+           
         }
 
         #imagem {
@@ -13,30 +13,43 @@
         }
 
         .formulario {
-            background-color: #85838690;
+            background-color: #2020205d;
             box-sizing: content-box;
             width: 35%;
             margin: auto;
-            border: 3px solid white;
+            border: 3px solid rgba(255, 255, 255, 0);
             border-radius: 10px;
-            padding: 10px;
+            padding: 14px;
             text-align: center;
             color: rgb(0, 0, 0);
+            opacity: .8;
+            z-index: -1;
         }
 
         #titulo1 {
+            display: block;
+            width: 40%;
+            margin: auto;
+            background-color:#2020205d ;
+            font-family: Times, "Times New Roman", Georgia, serif;
             color: rgb(255, 255, 255);
             text-align: center;
-            font-size: 250%;
+            font-size: 180%;
+            opacity: .8;
+            z-index: -1;
+            border: 1px solid rgba(255, 255, 255, 0);
+            border-radius: 10px;
+           
 
         }
 
 
         .input1 {
+           
             display: flex;
             color: white;
             padding: 5px;
-            font-size: 20px;
+            font-size: 25px;
             text-align: center;
 
 
@@ -49,14 +62,14 @@
             text-align: center;
             display: flex;
             color: white;
-            font-size: 20px;
+            font-size: 25px;
 
         }
 
-        .bloco {
+        #bloco {
             text-align: center;
-            color: white;
-            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
 
         }
 
@@ -81,6 +94,7 @@
             text-align: center;
             position: relative;
             transition: all .35s;
+            border-radius: 10px;
           }
           
           a span{
