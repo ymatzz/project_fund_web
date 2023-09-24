@@ -1,0 +1,109 @@
+        body {
+            background: linear-gradient(white, #db95f4, #db95f4, white);
+            border: 5px solid white;
+        }
+
+        #imagem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+
+
+        }
+
+        .formulario {
+            background-color: #85838690;
+            box-sizing: content-box;
+            width: 35%;
+            margin: auto;
+            border: 3px solid white;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        #titulo1 {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 250%;
+
+        }
+
+
+        .input1 {
+            display: flex;
+            color: white;
+            padding: 5px;
+            font-size: 20px;
+            text-align: center;
+
+
+
+
+
+        }
+
+        .input2 {
+            text-align: center;
+            display: flex;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .bloco {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .botao{
+            position: relative;
+            top: 50%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+          }
+          
+          a{
+            display: block;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid #333;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+          }
+          
+          a span{
+            position: relative;
+            z-index: 2;
+          }
+          
+          a:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #db95f4;
+            transition: all .35s;
+          }
+          
+          a:hover{
+            color: #fff;
+          }
+          
+          a:hover:after{
+            width: 100%;
+          }
+   
