@@ -1,17 +1,112 @@
-        body{
-            background-color: #db95f4;
+  #corpoFormulario {
+            background: linear-gradient(white, #db95f4, #db95f4, white);
+            width: 1024px;
+            height: 768px;
+            margin: 0px auto;
         }
-        #titulo{
+
+        #blocoImagem {
+            margin: 0px auto auto 30%;
+            width: 35%;
+            height: 20%;
+        }
+
+        #imagem{
+          width: 100%;
+          height: 100%;
+        }
+
+        .formulario {
+            background-color: #2020205d;
+            box-sizing: content-box;
+            width: 40%;
+            margin: 1% auto auto auto;
+            border: 3px none rgba(255, 255, 255, 0);
+            border-radius: 10px;
+            padding: 14px;
             text-align: center;
-            border-top: 5px solid;
-            border-bottom: 5px solid;
+            color: rgb(0, 0, 0);
+            opacity: 0.8;
+            height: 75%;
         }
-        
-        form{
+
+        .input1 {
+            font-family: Times, "Times New Roman", Georgia, serif;
+            display: flex;
+            color: white;
+            padding: 5px;
+            font-size: 25px;
             text-align: center;
-            border:3px ridge #000;
-            color: aliceblue;
         }
 
+        .input2 {
+            font-family: Times, "Times New Roman", Georgia, serif;
+            text-align: center;
+            display: flex;
+            color: white;
+            font-size: 25px;
+        }
 
+        #bloco {
+            font-family: Times, "Times New Roman", Georgia, serif;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            width: 100%;
+            height: 50%;
+        }
 
+        .botao{
+          display: flex;
+          justify-content: center;
+          margin-top: 1%;
+        }
+
+        #textarea{
+          width: 98%;
+          height: 60%;
+          border-color:#db95f4; 
+          border-radius: 10px;
+        }
+          
+          a{
+            display: block;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid #333;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+            border-radius: 10px;
+          }
+          
+          a span{
+            position: relative;
+            z-index: 2;
+          }
+          
+          a:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: purple;
+            transition: all .35s;
+          }
+          
+          a:hover{
+            color: #fff;
+          }
+          
+          a:hover:after{
+            width: 100%;
+          }
+   
