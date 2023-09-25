@@ -1,25 +1,13 @@
-#corpo{
-    width: 1024px;
-    height: 768px;
-    margin: 0px auto;
-    border: 1px solid black;
+
+.logoetitulo{
+    background-color: #DB95F4;
+    text-align: center;
+    padding: 10px 40px; /* Ajuste o preenchimento conforme necessário */
 }
 
-/* cor lilas = #C0BBFC */
 
-#header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #C0BBFC;
-    width: 950px;
-    height: 15vh;
-    margin: auto auto 2vh auto;
-}
-
-#navSuperior{
-    width: 950px;
-    margin: auto;
+img{
+     text-align: center;
 }
 
 .listaMenu{
@@ -30,76 +18,77 @@
 }
 
 .itensLista{
-    position:relative;
-    display: inline;
-    list-style-type: square;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 30vh;
-    height: auto;
-    text-align: center;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+    border: 5px solid #C0BBFC;
+    width: 110vh;
+    height: 6vh;
+	background-color: #C0BBFC;
 }
-
 .linksLista{
-    display: block;
+    font-family: Times, "Times New Roman", Georgia, serif;
     text-decoration: none;
-    font-family: sans-serif;
-    font-size: 2.5vh;
-    color: green;
-}
-
-.linksLista:hover{
-    background-color: #C0BBFC;
-    color: white;
-}
-
-.itensLista:hover ul{
-    display: block;
-}
-
-.itensLista ul li{
-    border: 1px solid black;
-    display: block;
-    width: 30vh; 
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+	vertical-align: middle;
 }
 
 .blocos{
-    width: 950px;
-    height: 40%;
-    margin: 2vh auto;
+    display: inline-block;  
 }
 
 #blocoEsquerdo{
     float: left;
-    width: 74%;
-    height: 100%;
-    background-color: blue;
+    width: 1115px;
+    height: 500px;
+    margin-top: 12px;
+    border-top: solid 5px;
+    border-right: solid 5px;
+    border-bottom: solid 5px;
+    border-left: solid 5px;
+    border-color: #C0BBFC;
+    background-color: white;
 }
 
 #blocoDireito{
     float: right;
-    width: 24%;
-    height: 100%;
-    background-color: red;
+    width: 355px;
+    height: 500px;
+    margin-top: 12px;
+    margin-left: 12px;
+    border-top: solid 5px;
+    border-right: solid 5px;
+    border-bottom: solid 5px;
+    border-left: solid 5px;
+    border-color: #C0BBFC;
+    background-color: white;
 }
 
 .divCuriosidades{
-    width: 950px;
-    height: 20%;
-    margin: 2vh auto;
+    display: inline-block; 
     display: flex;
-    gap: 5%;
+    gap: 2vh; 
 }
 
+
 .blocoCuriosidades{
-    width: 30%;
-    height: 100%;
-    background-color: blue;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 300px;
+	background-color: #E6A8E7;
 }
 
 .footer{
-    background-color: red;
-    width: 950px;
-    height: 7%;
-    margin: 0px auto;
+    background-color:#DB95F4;
+    padding: 55px 40px;
+    
 }
+
+
