@@ -110,3 +110,15 @@
   a:hover:after {
     width: 100%;
   }
+
+  #divBotaoVoltar{
+    position: absolute;
+    left: 1%;
+    top: 1%;
+  }
+
+  .botaoVoltar{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+  }
