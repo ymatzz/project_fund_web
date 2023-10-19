@@ -1,58 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body{
+body {
     margin: 0%;
     background-color: #F5F5F5;
 }
 
-.logoetitulo{
+.logoetitulo {
     background-color: #DB95F4;
     text-align: center;
-    padding: 10px 40px; 
+    padding: 10px 40px;
 }
 
 
-img{
-     text-align: center;
-     border-radius: 10px;
+img {
+    text-align: center;
+    border-radius: 10px;
 }
 
-.listaMenu{
+.listaMenu {
     margin: 0;
     padding: 0;
     display: flex;
     gap: 2vh;
 }
 
-.itensLista{
-	display: flex;
+.itensLista {
+    display: flex;
     justify-content: center;
-	align-items: center;
-	vertical-align: middle;
+    align-items: center;
+    vertical-align: middle;
     border: 5px solid #C0BBFC;
     width: 110vh;
     height: 6vh;
-	background-color: #C0BBFC;
+    background-color: #C0BBFC;
 }
-.linksLista{
+
+.linksLista {
     font-family: 'Montserrat', sans-serif;
     font-size: 100px;
     text-decoration: none;
     font-size: 20px;
     color: rgb(255, 255, 255);
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
-.imagem{
+.imagem {
     margin-top: 12px;
     margin-left: 155px;
 }
 
-.blocos{
-    display: inline-block;  
+.blocos {
+    display: inline-block;
 }
 
-#blocoEsquerdo{
+#blocoEsquerdo {
     font-family: 'Montserrat', sans-serif;
     float: left;
     width: 800px;
@@ -62,30 +63,32 @@ img{
     background-color: white;
     border-radius: 10px;
 }
-#titulo{
+
+#titulo {
     font-size: 20px;
     margin-left: 30px;
     color: #DB95F4;
     font-weight: bold
 }
 
-.conteudo{
+.conteudo {
     margin: 15px;
     text-indent: 17px;
 }
-.site{
+
+.site {
     margin: 15px;
     text-indent: 17px;
     color: #d584f3;
     font-style: italic;
 }
 
-#exclusivo{
+#exclusivo {
     font-weight: bold;
     color: red;
 }
 
-#blocoDireito{
+#blocoDireito {
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     float: right;
@@ -96,7 +99,7 @@ img{
     background-color: white;
 }
 
-#noticias{
+#noticias {
     font-size: 20px;
     margin-left: 15px;
     margin-right: 15px;
@@ -105,22 +108,22 @@ img{
     font-weight: bold
 }
 
-.corpo{
+.corpo {
     margin: 15px;
     text-indent: 10px;
 }
 
 
 
-.divCuriosidades{
+.divCuriosidades {
     font-family: 'Montserrat', sans-serif;
-    display: inline-block; 
+    display: inline-block;
     display: flex;
-    gap: 2vh; 
+    gap: 2vh;
 }
 
 
-.blocoCuriosidades{
+.blocoCuriosidades {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -131,54 +134,56 @@ img{
     margin-bottom: 10px;
     width: 500px;
     height: 350px;
-	background-color: #E6A8E7;
+    background-color: #E6A8E7;
 }
 
-#animal{
+#animal {
     margin-top: 12px;
     margin-left: 43px;
-    
+
 }
-#caminhada{
+
+#caminhada {
     margin-top: 12px;
     margin-left: 0px;
 }
-.caminhada{
-    margin-right: 20px;
-    margin-left: 20px;
-}
-.cozinhar{
+
+.caminhada {
     margin-right: 20px;
     margin-left: 20px;
 }
 
-.footer{
+.cozinhar {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.footer {
     font-family: 'Montserrat', sans-serif;
-    background-color:#DB95F4;
-    width:auto;  
+    background-color: #DB95F4;
+    width: auto;
     height: 200px;
 }
 
-.rodape{
+.rodape {
     margin-top: 0px;
     margin-left: 70px;
     color: white;
     font-size: 19px;
     font-weight: bold;
     font-style: italic;
-    
+
 }
 
- #faixa ul { 
+#faixa ul {
     margin-top: 60px;
-    display:flex; 
+    display: flex;
     color: white;
     padding-left: 150px;
 
- }
- #faixa ul li{
+}
+
+#faixa ul li {
     list-style-type: disc;
     padding-right: 200px;
- }
-
-
+}

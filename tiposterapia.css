@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0%;
+    background-color: #F5F5F5;
+}
+
+.logoetitulo {
+    background-color: #DB95F4;
+    text-align: center;
+    padding: 10px 40px;
+}
+
+.listaMenu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2vh;
+}
+
+.itensLista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    border: 5px solid #C0BBFC;
+    width: 110vh;
+    height: 6vh;
+    background-color: #C0BBFC;
+}
+
+.linksLista {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+}
+
+.divTiposTerapia{
+    margin: 1vh auto;
+    width: 80%;
+}
+
+.blocos{
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.tipos{
+    margin-top: 0vh;
+    width: 100%;
+}
+
+.figuras{
+    width: 50%;
+}
+
+.sobre{
+    width: 42%;
+    text-align: justify;
+    margin-left: 14vh;
+}
+
+.imagens{
+    border-radius: 10px;
+    width: 150px;
+    height: 200px;
+    margin-left: 14vh;
+}
+
+.textoParagrafo{
+    text-align: justify;
+}
