@@ -2,6 +2,7 @@
 
 body {
     margin: 0%;
+    width: 100%;
     background-color: #F5F5F5;
 }
 
@@ -17,8 +18,12 @@ img {
     border-radius: 10px;
 }
 
+#navSuperior{
+    width: 95%;
+    margin: 10px auto auto auto;
+}
+
 .listaMenu {
-    margin: 0;
     padding: 0;
     display: flex;
     gap: 2vh;
@@ -28,11 +33,16 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    vertical-align: middle;
     border: 5px solid #C0BBFC;
+    border-radius: 5px;
     width: 110vh;
     height: 6vh;
     background-color: #C0BBFC;
+    cursor: pointer;
+}
+
+.itensLista:hover{
+    opacity: 0.75;
 }
 
 .linksLista {
@@ -42,4 +52,14 @@ img {
     font-size: 20px;
     color: rgb(255, 255, 255);
     vertical-align: middle;
+}
+
+.linksLista:hover{
+    opacity: 0.75; 
+}
+
+.linksLista:active{
+    color: white;
+    opacity: 0.8;
+    font-weight: bold;
 }

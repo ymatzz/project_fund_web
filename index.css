@@ -72,7 +72,7 @@ img {
 .blocos {
     display: flex;
     width: 95%;
-    margin: 15px auto auto auto;
+    margin: 20px auto auto auto;
 }
 
 #blocoEsquerdo {
@@ -85,8 +85,66 @@ img {
     border-radius: 10px;
 }
 
-#imgTerapia{
+.imgTerapia{
     width: 600px;
+}
+
+.carrossel-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.botaoCarrossel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.botaoCarrossel:hover {
+    background-color: #555;
+}
+
+#proximo{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#proximo:hover{
+    background-color: #555;
+}
+
+#prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev:hover{
+    background-color: #555;
 }
 
 #titulo {

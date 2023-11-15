@@ -5,6 +5,7 @@
         <meta name="author" content="Deborah, Marcos e Matheus">
         <title>Sáude mental, ajuda para todos</title>
 		<link rel = "stylesheet" type="text/css" href="index.css">
+        <script src="https://kit.fontawesome.com/2fea851cf4.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -25,7 +26,51 @@
         </header>
         <main class="blocos">
             <article id="blocoEsquerdo">
-                <img id="imgTerapia" src = "./imagens/terapia.jpg">
+                <div class="carrossel-container">
+                    <div class="carrossel" id="carrossel">
+                        <img class="imgTerapia" src ="./imagens/terapia.jpg" alt="Image 1">
+                        <img class="imgTerapia" src="./imagens/terapia1.jpg" alt="Image 2">
+                        <img class="imgTerapia" src="./imagens/terapiacasal.jpg" alt="Image 3">
+                    </div>
+                    <i id="proximo" class="fa-solid fa-arrow-right" onclick="proximaImagem()"></i>
+                    <i id="prev" class="fa-solid fa-arrow-left" onclick="prevImagem()"></i>
+                </div>
+                <script>
+                    let currentIndex = 0;
+                    const carrossel = document.getElementById('carrossel');
+                    const totalImagens = document.querySelectorAll('.carrossel img').length;
+                    const intervalo = 3000;
+
+                    function showSlide(index) {
+                        if (index < 0) {
+                            currentIndex = totalImagens - 1;
+                        } else if (index >= totalImagens) {
+                            currentIndex = 0;
+                        } else {
+                            currentIndex = index;
+                        }
+
+                        const translateValue = -currentIndex * 100 + '%';
+                        carrossel.style.transform = `translateX(${translateValue})`;
+                    }
+
+                    function proximaImagem() {
+                        showSlide(currentIndex + 1);
+                    }
+
+                    function prevImagem() {
+                        showSlide(currentIndex - 1);
+                    }
+                    
+                    function passeAutomatico() {
+                        setInterval(proximaImagem, intervalo);
+                    }
+
+                    // Inicia a função carrossel
+                    showSlide(currentIndex);
+                    // Inicia a função de passar as imagens automaticamente
+                    passeAutomatico();
+                </script>
                 <p id="titulo"> Voce já conhece os benefícios da terapia.</p>
                 <p class="conteudo">Neste ambiente ultra-acelerado que vivemos, a nossa saúde mental é facilmente afetada por uma quantidade considerável de estímulos. A fragilidade dos relacionamentos interpessoais devido à correria e a competitividade do mercado de trabalho sobrecarregam o nosso emocional.</p>
                 <p class="conteudo">A dificuldade para manter uma autoimagem positiva diante da aparente “vida perfeita” dos colegas exibidas nas redes sociais também é um problema comum da atualidade.</p>
