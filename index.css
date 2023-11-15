@@ -73,6 +73,7 @@ img {
     display: flex;
     width: 95%;
     margin: 20px auto auto auto;
+    background-color: white;
 }
 
 #blocoEsquerdo {
