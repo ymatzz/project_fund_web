@@ -33,6 +33,11 @@ img {
     width: 110vh;
     height: 6vh;
     background-color: #C0BBFC;
+    cursor: pointer;
+}
+
+.itensLista:hover{
+    opacity: 0.75;
 }
 
 .linksLista {
@@ -42,6 +47,16 @@ img {
     font-size: 20px;
     color: rgb(255, 255, 255);
     vertical-align: middle;
+}
+
+.linksLista:hover{
+    opacity: 0.75; 
+}
+
+.linksLista:active{
+    color: white;
+    opacity: 0.8;
+    font-weight: bold;
 }
 
 .imagem {
