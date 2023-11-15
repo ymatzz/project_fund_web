@@ -2,6 +2,7 @@
 
 body {
     margin: 0%;
+    width: 100%;
     background-color: #F5F5F5;
 }
 
@@ -17,8 +18,12 @@ img {
     border-radius: 10px;
 }
 
+#navSuperior{
+    width: 95%;
+    margin: 10px auto auto auto;
+}
+
 .listaMenu {
-    margin: 0;
     padding: 0;
     display: flex;
     gap: 2vh;
@@ -30,6 +35,7 @@ img {
     align-items: center;
     vertical-align: middle;
     border: 5px solid #C0BBFC;
+    border-radius: 5px;
     width: 110vh;
     height: 6vh;
     background-color: #C0BBFC;
@@ -65,18 +71,23 @@ img {
 }
 
 .blocos {
-    display: inline-block;
+    display: flex;
+    width: 95%;
+    margin: 15px auto auto auto;
 }
 
 #blocoEsquerdo {
     font-family: 'Montserrat', sans-serif;
     float: left;
-    width: 800px;
+    width: 47%;
     height: 1120px;
     margin-left: 160px;
-    margin-top: 12px;
     background-color: white;
     border-radius: 10px;
+}
+
+#imgTerapia{
+    width: 600px;
 }
 
 #titulo {
@@ -104,13 +115,15 @@ img {
 }
 
 #blocoDireito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     float: right;
-    width: 280px;
+    width: 47%;
     height: 1000px;
-    margin-top: 70px;
-    margin-left: 179px;
+    margin-right: 40px;
     background-color: white;
 }
 
