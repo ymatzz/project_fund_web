@@ -33,7 +33,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    vertical-align: middle;
     border: 5px solid #C0BBFC;
     border-radius: 5px;
     width: 110vh;
@@ -145,9 +144,11 @@ img {
 
 .divCuriosidades {
     font-family: 'Montserrat', sans-serif;
-    display: inline-block;
     display: flex;
+    justify-content: space-between;
     gap: 2vh;
+    width: 95%;
+    margin: 20px auto auto auto;
 }
 
 
@@ -158,39 +159,24 @@ img {
     text-align: center;
     border-radius: 10px;
     display: flex;
-    margin-top: 6px;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 10px;
     width: 500px;
     height: 350px;
     background-color: #E6A8E7;
+    padding-bottom: 10px;
 }
 
-#animal {
-    margin-top: 12px;
-    margin-left: 43px;
-
-}
-
-#caminhada {
-    margin-top: 12px;
-    margin-left: 0px;
-}
-
-.caminhada {
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.cozinhar {
-    margin-right: 20px;
-    margin-left: 20px;
+.divConjunto{
+    margin-top: 10px;
 }
 
 .footer {
     font-family: 'Montserrat', sans-serif;
     background-color: #DB95F4;
     width: auto;
-    height: 200px;
+    height: 80px;
 }
 
 .rodape {
@@ -204,7 +190,7 @@ img {
 }
 
 #faixa ul {
-    margin-top: 60px;
+    margin-top: 15px;
     display: flex;
     color: white;
     padding-left: 150px;
