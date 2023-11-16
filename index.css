@@ -92,7 +92,7 @@ img {
 
 .carrossel-container {
     position: relative;
-    max-width: 600px;
+    width: 600px;
     margin: auto;
     overflow: hidden;
 }
