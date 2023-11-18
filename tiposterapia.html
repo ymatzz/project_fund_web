@@ -127,6 +127,53 @@
                     <figcaption class="sobre">Kabat-Zinn foi quem introduziu o treino de mindfulness.</figcaption>
                 </figure>
             </main>
+            <form id="avaliacao">
+                <label>Esta informação foi útil pra você?</label>
+                <button class="botaoAvaliacao" onclick="BoaAvaliacao()">Sim</button>
+                <button class="botaoAvaliacao" onclick="maAvaliacao()">Não</button>
+            </form>
+            <script>
+                async function BoaAvaliacao(){
+                    document.getElementById("avaliacao").innerText = 'Obrigado por nos avaliar!'
+                };
+                async function maAvaliacao(){
+                    document.getElementById("avaliacao").innerHTML = '';
+                    var textoSugestao = document.createElement("span");
+                    textoSugestao.innerText = 'Como podemos melhorar?';
+                    textoSugestao.className = 'textoSugestao';
+
+                    
+                    var sugestao = document.createElement("input");
+                    sugestao.type = "text";
+                    sugestao.placeholder = "Digite sua sugestão";
+                    sugestao.className = 'inputSugestao';
+
+                    // Adicionar um botão
+                    var botaoSugestao = document.createElement("button");
+                    botaoSugestao.innerHTML = "Enviar";
+                    botaoSugestao.className = 'botaoSugestao';
+                    botaoSugestao.onclick = fimAvaliacao;
+
+                    // Adicionar a caixa de input e o botão ao formulário
+                    document.getElementById("avaliacao").appendChild(textoSugestao);
+                    document.getElementById("avaliacao").appendChild(sugestao);
+                    document.getElementById("avaliacao").appendChild(botaoSugestao);
+
+                    async function fimAvaliacao(){
+                        alert("Dados enviados com sucesso!")
+                        document.getElementById("avaliacao").innerText = 'Obrigado por nos avaliar!'
+                    }
+                };
+            </script>
         </div>
+        <footer class="footer">
+            <span class="rodape">Caso você precise de auxílio urgente, procure auxílio em alguma das opções abaixo:</span>
+            <div id="faixa">
+                <ul>
+                    <li class="lista">CVV ( Centro de Valorização a Vida) - 188</li>
+                    <li>Alguns dos Aplicativos abaixo também oferecer amparo:</li>   
+                </ul>
+            </div>
+        </footer> 
     </body>
 </html>
