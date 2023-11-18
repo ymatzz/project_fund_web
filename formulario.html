@@ -4,6 +4,34 @@
         <meta charset="UTF-8">
         <title>FORMULARIO</title>
         <link rel="stylesheet" type="text/css" href="formulario.css">
+        <script>
+            async function RedirecionaPagina(event){
+                event.preventDefault();
+                let validacao = await ValidacaoDados();
+                if (validacao){
+                    window.location.href = "index.html";
+                } else {
+                    alert("Preencha todos os campos obrigatórios!");
+                }
+            };
+            async function ValidacaoDados(){
+                if (formulario.nome.value == "" || formulario.nome.value.length <= 2){
+                    alert("Preecha um nome válido!");
+                    return false
+                } else if (formulario.data.value == "" || formulario.data.value.length < 8){
+                    alert("Preecha uma data de nascimento válida!");
+                    return false
+                } else if (formulario.telefone.value == "" || formulario.telefone.value.length < 8 || formulario.telefone.value.length > 17){
+                    alert("Preecha um número de telefone válido!");
+                    return false
+                } else if (formulario.sugestao.value == "" || formulario.sugestao.value.length < 2){
+                    alert("Preecha uma sugestão válida!");
+                    return false
+                } else {
+                    return true
+                };
+            };
+        </script>
     </head>
     <body id="corpoFormulario">
         <section id="divBotaoVoltar">
@@ -14,7 +42,7 @@
         <aside id="blocoImagem">
             <img id="imagem" src="./imagens/bem_vindo.png">
         </aside>
-            <form class="formulario">
+            <form class="formulario" name="formulario" onsubmit="RedirecionaPagina(event)">
                 <div class="input1">
                     <p >Como podemos te chamar:<input type="text"  name="nome" required placeholder="NOME" style=" border-color:#db95f4; width:200px;height: 30px; text-align: center; border-radius: 10px ;">
                         <p >Gênero que se identifica:
@@ -28,15 +56,15 @@
                             </select></p>
                 </div>
                 <div class="input2">
-                        <p >Data de nascimento:<input id="date" type="date" style="border-color:#db95f4; width:200px; height: 30px; text-align: center; border-radius: 10px " ></p>
-                        <p >Número de Celular:<input type="tel" id="telefone"class="input-padrao" required placeholder="(xx) xxxxx-xxxx" style="border-color:#db95f4; width:200px; height: 30px; text-align: center; border-radius: 10px"></p>
+                        <p >Data de nascimento:<input required name="data" id="date" type="date" style="border-color:#db95f4; width:200px; height: 30px; text-align: center; border-radius: 10px " ></p>
+                        <p >Número de Celular:<input required name="telefone" type="tel" id="telefone"class="input-padrao" required placeholder="(xx) xxxxx-xxxx" style="border-color:#db95f4; width:200px; height: 30px; text-align: center; border-radius: 10px"></p>
                 </div>
                 <aside id="bloco">
                     <p>Como podemos te ajudar?</p>
-                    <textarea id="textarea" required placeholder="Escreva Aqui!!"></textarea>
-                    <div class="botao">
-                        <a href="index.html"><span>Finalizar</span></a>
-                    </div>
+                    <textarea name="sugestao" id="textarea" required placeholder="Escreva Aqui!!"></textarea>
+                    <button class="botao" onclick="ValidacaoDados()" type="submit">
+                        <a><span>Finalizar</span></a>
+                    </button>
                 </aside>
             </form>
     </body>
