@@ -237,7 +237,7 @@ img {
     font-family: 'Montserrat', sans-serif;
     background-color: #DB95F4;
     width: auto;
-    height: 80px;
+    height: auto;
 }
 
 .rodape {
@@ -261,4 +261,11 @@ img {
 #faixa ul li {
     list-style-type: disc;
     padding-right: 200px;
+}
+
+#autores{
+    font-size: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-left: 5px;
 }
