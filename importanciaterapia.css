@@ -83,6 +83,10 @@ img {
     
     
 }
+#blocogrande{
+    text-justify: distribute;
+}
+
 .footer {
     font-family: 'Montserrat', sans-serif;
     background-color: #DB95F4;
