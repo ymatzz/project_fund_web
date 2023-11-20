@@ -7,7 +7,7 @@ body {
 }
 
 .logoetitulo {
-    background-color: #DB95F4;
+    background-color: #D4A6C9;
     text-align: center;
     padding: 10px 40px;
 }
@@ -33,11 +33,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid #C0BBFC;
+    border: 5px solid #46878F;
     border-radius: 5px;
     width: 110vh;
     height: 6vh;
-    background-color: #C0BBFC;
+    background-color: #46878F;
     cursor: pointer;
 }
 
