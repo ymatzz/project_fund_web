@@ -25,18 +25,19 @@ img {
 
 .listaMenu {
     padding: 0;
+    list-style: none;
     display: flex;
-    gap: 2vh;
+    align-items: center;
+    gap: 2%;
 }
 
 .itensLista {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    vertical-align: middle;
+    text-align: center;
     border: 5px solid #46878F;
     border-radius: 5px;
-    width: 110vh;
-    height: 6vh;
+    width: 20%;
+    height: 45px;
     background-color: #46878F;
     cursor: pointer;
 }
@@ -92,19 +93,33 @@ footer{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 12px;
+    padding-bottom: 10px;
 }
 
 .rodape {
     width: auto; 
-    height: 270px; 
     background-color: #F1BBDD;
-    margin: 45px auto;
-    padding: 35px;
+    margin: 45px 0px 10px 0;
+    padding: 15px 0 30px 0;
     margin-top: 0%;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+.tabela{
+    width: 90%;
+    margin: 0 auto 0 auto;
+    font-size: 15px;
+}
+
+.cedulas{
+    width: 33%;
+    vertical-align: top;
+    text-align: center;
+    align-items: start;
 
 }
+
 .estilo{
     color: white;
     text-align: center;
