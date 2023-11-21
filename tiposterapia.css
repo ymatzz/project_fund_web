@@ -27,8 +27,8 @@ img {
     padding: 0;
     list-style: none;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 2%;
 }
 
 .itensLista {
@@ -36,7 +36,7 @@ img {
     text-align: center;
     border: 5px solid #46878F;
     border-radius: 5px;
-    width: 20%;
+    width: 23.5%;
     height: 45px;
     background-color: #46878F;
     cursor: pointer;
@@ -44,6 +44,11 @@ img {
 
 .itensLista:hover{
     opacity: 0.75;
+}
+
+.itensLista:active{
+    opacity: 0.8;
+    font-weight: bold;
 }
 
 .linksLista {
@@ -120,7 +125,7 @@ footer{
     width: auto; 
     background-color: #F1BBDD;
     margin: 45px 0px 10px 0;
-    padding: 15px 0 30px 0;
+    padding: 45px 0 45px 0;
     margin-top: 0%;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
