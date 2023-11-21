@@ -32,14 +32,15 @@ img {
 }
 
 .itensLista {
-    vertical-align: middle;
-    text-align: center;
     border: 5px solid #46878F;
     border-radius: 5px;
     width: 23.5%;
     height: 45px;
     background-color: #46878F;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .itensLista:hover{
