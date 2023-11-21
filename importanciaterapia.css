@@ -7,7 +7,7 @@ body {
 }
 
 .logoetitulo {
-    background-color: #D4A6C9;
+    background-color: #F1BBDD;
     text-align: center;
     padding: 10px 40px;
 }
@@ -78,29 +78,51 @@ img {
     margin-top: 3%;
     margin-left: 10%;
     text-justify:auto;
-    font-family: 'Montserrat', sans-serif;
-
-    
-    
+    font-family: 'Montserrat', sans-serif; 
 }
+
 #blocogrande{
     text-justify: distribute;
 }
 
-.footer {
+
+
+footer{
+    border-top: 30px;
     font-family: 'Montserrat', sans-serif;
-    background-color: #DB95F4;
-    width: auto;
-    height: 80px;
+    text-align: center;
+    font-size: 12px;
 }
 
 .rodape {
-    margin-top: 0px;
-    margin-left: 70px;
+    width: auto; 
+    height: 270px; 
+    background-color: #F1BBDD;
+    margin: 45px auto;
+    padding: 35px;
+    margin-top: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.estilo{
     color: white;
-    font-size: 19px;
+    text-align: center;
+}
+.estilo1{
+    text-align: center;
+    color: red;
     font-weight: bold;
-    font-style: italic;
+    font-size: 20px;
+
+}
+
+.invisivel{
+    color:#F1BBDD;
+}
+
+.link-colorido {
+    color: #46878F;
 }
 
 #faixa ul {
