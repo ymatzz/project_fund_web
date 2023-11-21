@@ -34,6 +34,7 @@ img {
 .itensLista {
     border: 5px solid #46878F;
     border-radius: 5px;
+    text-decoration: none;
     width: 23.5%;
     height: 45px;
     background-color: #46878F;
@@ -54,6 +55,7 @@ img {
 
 .linksLista {
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
     font-size: 100px;
     text-decoration: none;
     font-size: 20px;
@@ -301,3 +303,6 @@ footer{
     padding-right: 200px;
 }
 
+#video{
+    width: 100%;
+}
