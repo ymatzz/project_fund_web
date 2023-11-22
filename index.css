@@ -83,7 +83,7 @@ img {
     margin: 20px auto auto auto;
     background-color: white;
     padding-bottom: 10px;
-    gap: 100px;
+    gap: 75px;
 }
 
 #blocoEsquerdo {
@@ -91,7 +91,7 @@ img {
     float: left;
     width: 47%;
     height: 1120px;
-    margin-left: 50px;
+    margin-left: 45px;
     background-color: white;
     border-radius: 10px;
 }
